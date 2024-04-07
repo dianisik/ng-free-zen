@@ -8,7 +8,43 @@
 </head>
 
 <body>
-  <header>Шапка сайта</header>
+  <header class="header">
+    <div class="header__wrapper">
+      <button class="header__logo" type="button" id="logo">
+        <img src="assets/icons/logo.svg" alt="ZEN">
+      </button>
+      <ul class="menu" id="menu">
+        <li class="menu__item">
+          <a href="#download">Download</a>
+        </li>
+        <li class="menu__item">
+          <a href="#warranty">Warranty</a>
+        </li>
+        <li class="menu__item">
+          <a href="#care">Care</a>
+        </li>
+        <li class="menu__item">
+          <a href="#cashback">Cashback</a>
+        </li>
+        <li class="menu__item">
+          <a href="#clients">Clients</a>
+        </li>
+      </ul>
+      <div class="header__actions">
+        <select class="header__lang" id="lang">
+          <option value="en">EN</option>
+          <option value="ru">RU </option>
+        </select>
+        <button class="header__theme" type="button" id="theme">
+          <img src="assets/icons/moon.svg" alt="Moon">
+        </button>
+        <button class="header__burger" type="button" id="burger">
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+  </header>
   <section class="download" id="download">
     <div class="download__wrapper">
       <div class="download__text-block">
@@ -67,28 +103,28 @@
   <section class="clients" id="clients">
     <div class="clients__wrapper">
       <ul class="clients__brands">
-        <li class="clients__brands">
+        <li class="clients__brand">
           <img src="assets/brands/1.svg" alt="Brand 1">
         </li>
-        <li class="clients__brands">
+        <li class="clients__brand">
           <img src="assets/brands/2.svg" alt="Brand 2">
         </li>
-        <li class="clients__brands">
+        <li class="clients__brand">
           <img src="assets/brands/3.svg" alt="Brand 3">
         </li>
-        <li class="clients__brands">
+        <li class="clients__brand">
           <img src="assets/brands/4.svg" alt="Brand 4">
         </li>
-        <li class="clients__brands">
+        <li class="clients__brand">
           <img src="assets/brands/5.svg" alt="Brand 5">
         </li>
-        <li class="clients__brands">
+        <li class="clients__brand">
           <img src="assets/brands/6.svg" alt="Brand 6">
         </li>
-        <li class="clients__brands">
+        <li class="clients__brand">
           <img src="assets/brands/7.svg" alt="Brand 7">
         </li>
-        <li class="clients__brands">
+        <li class="clients__brand">
           <img src="assets/brands/8.svg" alt="Brand 8">
         </li>
       </ul>
