@@ -133,67 +133,67 @@
     </div>
   </section>
   <footer class="footer">
-    <div class="footer_columns">
+    <div class="footer__columns">
       <div class="column">
-        <h3 class="column_title">Learn</h3>
-        <ul class="column_list">
-          <li class="footer_item">
+        <h3 class="column__title">Learn</h3>
+        <ul class="column__list">
+          <li class="footer__item">
             <a href="https://example.com">Help center</a>
           </li>
-          <li class="footer_item">
+          <li class="footer__item">
             <a href="https://example.com">Join ZEN team</a>
           </li>
-          <li class="footer_item">
+          <li class="footer__item">
             <a href="https://example.com">Privacy Policy</a>
           </li>
-          <li class="footer_item">
+          <li class="footer__item">
             <a href="https://example.com">Cookies</a>
           </li>
-          <li class="footer_item">
+          <li class="footer__item">
             <a href="https://example.com">Terms of use</a>
           </li>
         </ul>
       </div>
       <div class="column">
-        <h3 class="column_title">Discover</h3>
-        <ul class="column_list">
-          <li class="footer_item">
+        <h3 class="column__title">Discover</h3>
+        <ul class="column__list">
+          <li class="footer__item">
             <a href="https://example.com">For developers</a>
           </li>
-          <li class="footer_item">
+          <li class="footer__item">
             <a href="https://example.com">Apple Pay</a>
           </li>
-          <li class="footer_item">
+          <li class="footer__item">
             <a href="https://example.com">Google Pay</a>
           </li>
         </ul>
       </div>
       <div class="column">
-        <h3 class="column_title">Offer</h3>
-        <ul class="column_list">
-          <li class="footer_item">
+        <h3 class="column__title">Offer</h3>
+        <ul class="column__list">
+          <li class="footer__item">
             <a href="https://example.com">Business</a>
           </li>
-          <li class="footer_item">
+          <li class="footer__item">
             <a href="https://example.com">Personal</a>
           </li>
         </ul>
       </div>
       <div class="column">
-        <h3 class="column_title">Language</h3>
-        <ul class="column_list">
-          <li class="footer_item">
+        <h3 class="column__title">Language</h3>
+        <ul class="column__list">
+          <li class="footer__item">
             <a href="https://example.com">English</a>
           </li>
-          <li class="footer_item">
+          <li class="footer__item">
             <a href="https://example.com">Polish</a>
           </li>
         </ul>
       </div>
       <div class="column">
-        <h3 class="column_title">Follow us</h3>
-        <ul class="column_list">
-          <li class="footer_item">
+        <h3 class="column__title">Follow us</h3>
+        <ul class="column__list">
+          <li class="footer__item">
             <a href="https://example.com">
               <img src="assets/icons/in.svg" alt="Linkedin">
             </a>
@@ -201,28 +201,62 @@
         </ul>
       </div>
       <div class="column">
-        <h3 class="column_title">Contact</h3>
-        <ul class="column_list">
-          <li class="footer_item">
+        <h3 class="column__title">Contact</h3>
+        <ul class="column__list">
+          <li class="footer__item">
             <a href="mailto:hello@zen.com">hello@zen.com</a>
           </li>
         </ul>
       </div>
     </div>
-    <div class="footer_info">
-      <a class="footer_logo" href="https:example.com">
+    <div class="footer__info">
+      <a class="footer__logo" href="https:example.com">
         <img src="assets/icons/logo2.svg" alt="logo">
       </a>
-      <p class="footer_copy">ZEN.COM is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.</p>
-      <p class="footer_copy">Registration number of the company 304749651, VAT ID LT100011714916.</p>
-      <p class="footer_copy">License of electronic money institutions number LB000457.</p>
-      <p class="footer_copy">Share capital 2.185.000,00 EUR.</p>
-      <p class="footer_copy">Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.</p>
-      <p class="footer_copy">Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.</p>
-      <a class="footer_dev" href="https:example.com">
+      <p class="footer__copy">ZEN.COM is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.</p>
+      <p class="footer__copy">Registration number of the company 304749651, VAT ID LT100011714916.</p>
+      <p class="footer__copy">License of electronic money institutions number LB000457.</p>
+      <p class="footer__copy">Share capital 2.185.000,00 EUR.</p>
+      <p class="footer__copy">Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.</p>
+      <p class="footer__copy">Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.</p>
+      <a class="footer__dev" href="https:example.com">
         <img src="assets/icons/developer.svg" alt="Developer">
       </a>
     </div>
   </footer>
+  <div class="modal" id="modal">
+    <div class="modal__body">
+      <button class="modal__close" id="close">
+        <img src="assets/icons/close.svg" alt="close">
+      </button>
+      <h3 class="modal__title">Order a consultation</h3>
+      <form class="form" id="order">
+        <label class="form__input">
+          <span>Name</span>
+          <input type="text" id="name">
+        </label>
+        <label class="form__input">
+          <span>Tel.</span>
+          <input type="tel" id="tel">
+        </label>
+        <label class="form__input">
+          <span>E-mail</span>
+          <input type="email" id="email">
+        </label>
+        <label class="form__select">
+          <span>Connection</span>
+          <select id="connection">
+            <option value="telegram">Telegram</option>
+            <option value="whatsapp">WhatsApp</option>
+          </select>
+        </label>
+        <label class="form__checkbox">
+          <input type="checkbox" id="policy">
+          <a href="https://example.com/policy" target="_blank">Privacy policy</a>
+        </label>
+        <button class="form__submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
