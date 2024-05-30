@@ -1,0 +1,24 @@
+.column {
+  /* border: 1px dashed red; */
+}
+
+.column img {
+  /* display: block; */
+  width: 40px;
+  height: 40px;
+}
+
+.column__title {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+ 
+.column__list {
+  display: grid;
+  gap: 10px;
+} 
+
+.column__item {
+  font-size: 14px; 
+}
